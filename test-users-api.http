@@ -1,0 +1,7 @@
+POST 127.0.0.1:8080/signup
+Content-Type: application/json
+
+{
+  "email": "small.victorio@host.org.com",
+  "password": "plain-text-pass"
+}
