@@ -1,0 +1,32 @@
+GET http://127.0.0.1:8080/events
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8080/events
+Content-Type: application/json
+
+{
+   "name": "Event two",
+   "description": "This is an event again",
+   "location": "Somewhere else",
+   "date_time": "2024-11-24T00:01:00Z"
+}
+
+###
+
+GET http://127.0.0.1:8080/events/3
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8080/events/3
+Content-Type: application/json
+
+{
+  "name": "Event Three",
+  "description": "This is the third",
+  "location": "Somewhere else",
+  "date_time": "2024-11-24T00:02:00Z"
+}
+
+###
